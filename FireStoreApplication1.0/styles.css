@@ -1,0 +1,126 @@
+
+HTML body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background: rgb(235, 232, 232);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.containerTab{
+    z-index: 1;
+    background: rgb(126, 125, 125);
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    align-items: center;
+}
+.pullTab{
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 100px;
+    top: 50%;
+    left: 7px;
+    width: 1rem;
+    height: 60px;
+    background: rgb(201, 197, 197);
+}
+.routineContainer{
+    position: absolute;
+    border: none;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 5rem;
+    width: 70rem;
+    display: grid;
+    grid-template-columns: repeat(7, 7rem);
+    gap: 2rem;
+    align-items: center;
+    justify-content:center;
+}
+.routineContainer input{
+    font-size: 15px;
+    font-weight: 1000;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+.routineContainer input:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: #000000;
+    text-shadow: 0 0 7px #a10499;
+}
+.containerBox{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top:50%;
+    left: 50%;
+    margin-right: -50%;
+    background: rgb(107, 107, 107);
+    align-items: left;
+    border: 7px solid rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+}
+
+.img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 40%;
+    border: 2px solid #000000;
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+@media all and (max-width: 1000px) {
+    .containerTab{
+        width: 100%;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .routineContainer{
+        grid-template-columns: repeat(7, 30px);
+    }
+    .pullTab{
+        top: 7px;
+        height: 1rem;
+        width: 60px;
+    }
+}
+
+
+/* <!-- Css Font Units -->
+<!-- Font size 'rem' adapt to user preference -->
+<!-- 'Em' is worst then rem -->
+
+<!-- Width Units -->
+<!-- '%' good for a max weight with it -->
+<!-- 'ch' = to a character -->
+
+<!-- Height units -->
+<!-- Min height is better for overflow -->
+<!-- percentage, rem or viewport 
+        however the question still remains 
+        do you need to set a height -->
+
+<!-- Padding & Marggins -->
+<!-- em or rem for consistance or adjustable  -->
+
+<!-- Media Querys -->
+<!-- em for consistancy -->
+
+<!-- Don't use px --> */
